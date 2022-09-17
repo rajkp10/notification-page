@@ -1,23 +1,14 @@
-import logo from "./logo.svg";
 import "./App.css";
+import Header from "./components/Header";
+import Comments from "./components/Comments";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="min-h-screen w-screen flex justify-center items-center md:bg-VeryLightGrayishBlue">
+      <div className="mx-3 my-2 md:px-6 md:py-4 flex flex-col w-screen bg-White md:w-1/2 md:rounded-lg">
+        <Header />
+        <Comments />
+      </div>
     </div>
   );
 }
