@@ -1,3 +1,14 @@
+# About Project
+
+Notification Page Task from Frontend Mentor Website.
+
+# Tools
+
+The site is created using ReactJS and Tailwind CSS
+
+# Preview
+![notification-page-preview](https://user-images.githubusercontent.com/96880670/190869386-7d39ea3b-8de0-474b-b0dd-6a9227f885d2.jpg)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
