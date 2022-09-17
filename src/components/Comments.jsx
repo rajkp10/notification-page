@@ -1,13 +1,15 @@
 import React from "react";
-import { data } from "../assets/data";
 import Comment from "./Comment";
 
-function Comments() {
-  console.log(data);
+function Comments({ persons, handleClick }) {
+  if (!persons) {
+    return;
+  }
+
   return (
     <div className="py-4 w-full flex flex-col justify-between items-stretch space-y-2">
-      {data.map((person) => {
-        return <Comment person={person} />;
+      {persons.map((person) => {
+        return <Comment person={person} handleClick={handleClick} />;
       })}
     </div>
   );
