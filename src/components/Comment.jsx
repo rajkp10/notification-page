@@ -22,7 +22,7 @@ function Comment({ person, handleClick }) {
       className={`p-2 flex justify-between ${
         isNew ? "bg-VeryLightGrayishBlue" : ""
       } rounded-md space-x-2`}
-      onClick={() => handleClick(name)}
+      onClick={() => handleClick(isNew)}
     >
       <div className="flex flex-row space-x-4">
         <img

@@ -8,23 +8,17 @@ function App() {
   const [persons, setPersons] = useState(data);
   const [count, setCount] = useState(3);
 
-  // const countNew = () => {
-  //   persons.map((person) => {
-  //     if (person.isNew === true) {
-  //       count++;
-  //     }
-  //   });
-  // };
-
-  const handleClick = (name) => {
+  const handleClick = (isNew) => {
     const newPersons = persons.map((person) => {
-      if (person.name === name) {
+      if (person.isNew === true) {
         return { ...person, isNew: false };
       } else {
         return person;
       }
     });
-    setCount(count - 1);
+    if (count != 0) {
+      setCount(count - 1);
+    }
     setPersons(newPersons);
   };
 
