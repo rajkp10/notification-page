@@ -8,9 +8,9 @@ function App() {
   const [persons, setPersons] = useState(data);
   const [count, setCount] = useState(3);
 
-  const handleClick = (isNew) => {
+  const handleClick = (name, isNew) => {
     const newPersons = persons.map((person) => {
-      if (person.isNew === true) {
+      if (person.name === name && isNew === true) {
         return { ...person, isNew: false };
       } else {
         return person;
