@@ -11,14 +11,12 @@ function App() {
   const handleClick = (name, isNew) => {
     const newPersons = persons.map((person) => {
       if (person.name === name && isNew === true) {
+        setCount(count - 1);
         return { ...person, isNew: false };
       } else {
         return person;
       }
     });
-    if (count != 0) {
-      setCount(count - 1);
-    }
     setPersons(newPersons);
   };
 
